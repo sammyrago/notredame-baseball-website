@@ -1,0 +1,287 @@
+/* Basic Reset */
+body, html, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header, h1, h2, h3{
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Full-Height Header */
+.header {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  background: url('./images/team_pic.jpg') no-repeat center center/cover;
+  color:rgba(237, 237, 245, 1);
+}
+
+.title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 32px;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+.cover {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+}
+
+.navbar ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-toggle{
+  display: none;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.navbar-menu.active{
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-menu li{
+  margin: 0 10px;
+}
+
+.navbar-menu a{
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar-menu a:hover{
+  text-decoration: underline;
+}
+
+.navbar-close-icon {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* Media Queries */
+@media (max-width: 1050px) {
+  .navbar-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .navbar-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .navbar-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px){
+  .header, .cover{
+    height: 75vh
+  }
+}
+
+@media(max-width: 600px){
+  .header, .cover{
+    height: 50vh
+  }
+}
+
+/* Sections */
+.section {
+  min-height: 100vh; 
+  padding: 20px;
+  box-sizing: border-box;
+} 
+
+#coaches{
+  background-color: rgba(40, 45, 113, 1);
+  width: 100%;
+}
+
+#coaches h2{
+  color: rgba(237, 237, 245, 1);
+  text-align: center;
+  font-size: 32px;
+}
+
+#coaches h3, p{
+  color: rgba(40, 45, 113, 1);
+}
+
+#coaches ul{
+  list-style-type: none;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#coaches li{
+  margin: 20px 0;
+  padding: 24px;
+}
+
+.even, .odd{
+  background: rgba(237, 237, 245, .85);
+  border-radius: 10px;
+}
+
+#coaches img{
+  display: block;
+  margin: 0 auto 20px;
+  width: 560px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 1050px){
+  #coaches img{
+    width: 75%;
+  }
+  #coaches ul{
+    list-style-type: none;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  #coaches h2{
+    font-size: 24px;
+  }
+}
+
+/* OUR STORY */
+#our-story{
+  background: url('./images/mission_background.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#our-story h2, #our-story p{
+  color: rgba(237, 237, 245, 1);
+  text-align: center;
+}
+
+#our-story h2{
+  font-size: 32px;
+}
+
+#our-story p{
+  font-size: 24px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-style: italic;
+  line-height: 149%;
+}
+
+@media (max-width: 1050px){
+  #our-story p{
+    font-size: 20px;
+  }
+}
+
+/* HISTORY */
+#history{
+  background-color: rgba(40, 45, 113, 1);
+}
+
+#history h2, #history p{
+  color: rgba(237, 237, 245, 1);
+  text-align: center;
+}
+
+#history h2{
+  font-size: 32px;
+}
+
+/* COLLAGE */
+#collage{
+  background: url('./images/desktop-collage.png') no-repeat center center/cover;
+}
+
+@media (max-width: 600px){
+  #collage{
+    background: url('./images/collage-mobile.png') no-repeat center center/cover;
+  }
+}
+
+/* FOOTER */
+#contact-us{
+  background-color: rgba(40, 45, 113, 1);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-us h3{
+  color: rgba(237, 237, 245, 1);
+  margin: 10px;
+}
+
+#contact-us ul{
+  color: rgba(237, 237, 245, 1);
+  list-style-type: none;
+  float: right;
+}
+
+#contact-us li{
+  align-items: right;
+  margin: 10px 10px;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
