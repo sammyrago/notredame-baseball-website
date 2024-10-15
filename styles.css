@@ -7,6 +7,10 @@ body, html, p {
   font-style: normal;
 }
 
+p{
+  text-indent: 25px;
+}
+
 header, h1, h2, h3{
   font-family: "Lato", sans-serif;
   font-weight: 900;
@@ -234,17 +238,32 @@ header, h1, h2, h3{
 
 /* HISTORY */
 #history{
+  min-height: 50vh;
   background-color: rgba(40, 45, 113, 1);
-}
-
-#history h2, #history p{
-  color: rgba(237, 237, 245, 1);
   text-align: center;
 }
 
 #history h2{
+  color: rgba(237, 237, 245, .85);
+  letter-spacing: 10px;
+  margin-bottom: 25px;
   font-size: 32px;
 }
+
+#history ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#history li{
+  letter-spacing: 5px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: rgba(237, 237, 245, .85);
+  font-size: 32px;
+}
+
 
 /* COLLAGE */
 #collage{
