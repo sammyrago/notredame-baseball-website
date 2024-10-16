@@ -206,8 +206,8 @@ header, h1, h2, h3{
   }
   #coaches ul{
     list-style-type: none;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   #coaches h2{
     font-size: 24px;
