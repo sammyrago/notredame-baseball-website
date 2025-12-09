@@ -22,7 +22,7 @@ header, h1, h2, h3{
   position: relative;
   height: 100vh; /* Full viewport height */
   width: 100%;
-  background: url('./team_pic.jpg') no-repeat center center/cover;
+  background: url('./baseball.jpg') no-repeat center center/cover;
   color:rgba(237, 237, 245, 1);
 }
 
@@ -326,3 +326,4 @@ header, h1, h2, h3{
 html {
   scroll-behavior: smooth;
 }
+
